@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Export Table Data</title>
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"/>
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.css"/>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+      <script type="text/Javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+   </head>
+   <body>
+      <div style="margin: 20px;">
+         <form action="/generate_pdf" method="POST">
+            <button class="dt-button" type="submit">Generate PDF</button>
+         </form>
+         <table id="example" class="display dataTable cell-border" style="width:100%">
+            <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/facebook.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/instagram.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/twitter.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/linkedin.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/tiktok.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/youtube.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>Start date</th>
+                  <th>Salary</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Ashton Cox</td>
+                  <td>Junior Technical Author</td>
+                  <td>San Fransico</td>
+                  <td>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/facebook.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </td>
+                  <td>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/instagram.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </td>
+                  <td>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/twitter.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </td>
+                  <td>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/linkedin.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </td>
+                  <td>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/tiktok.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </td>
+                  <td>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/youtube.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </td>
+                  <td>2009-01-12</td>
+                  <td>$86,000</td>
+               </tr>
+               <tr>
+                  <td>Cedric Kelly</td>
+                  <td>Senior Javascript Developer</td>
+                  <td>Edinburgh</td>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/facebook.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/instagram.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/twitter.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/linkedin.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/tiktok.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/youtube.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <td>2012-013-29</td>
+                  <td>$433,060</td>
+               </tr>
+               <tr>
+                  <td>Tiger Hair</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/facebook.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/instagram.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/twitter.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/linkedin.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/tiktok.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/youtube.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <td>2011-04-25</td>
+                  <td>$320,800</td>
+               </tr>
+               <tr>
+                  <td>Tiger Nixon</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/facebook.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/instagram.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/twitter.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/linkedin.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/tiktok.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <th>
+                     <a href="https://github.com" target="_blank"><img
+                        src="{{ url_for('static', filename='images/youtube.svg') }}"
+                        alt="facebook"
+                        width="16px"
+                        height="16px"></a>
+                  </th>
+                  <td>2011-04-25</td>
+                  <td>$320,800</td>
+               </tr>
+
+            </tbody>
+         </table>
+         
+      </div>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.js"></script>
+      <script src="https://kit.fontawesome.com/2b9cdc1c9a.js" crossorigin="anonymous"></script>
+
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://datatables.net/media/css/site-examples.css">
+
+      <script>
+         $(document)
+            .ready(function () {
+
+               var table = $('#example').DataTable({
+                  dom: 'frtip'
+               });
+
+            });
+      </script>
+   </body>
+</html>
